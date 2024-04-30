@@ -1,0 +1,18 @@
+.chart-container{
+
+    width: 350px;
+
+height: 225px;
+
+margin-left: 25px;
+
+/* white */
+
+padding: 14px;
+
+background: #ffffff;
+border: 2px solid rgba(122, 115, 115, 0.8)   ;
+box-shadow: #df2323;
+border-radius: 8px;
+
+}
