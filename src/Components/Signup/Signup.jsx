@@ -6,12 +6,12 @@ const Signup = () => {
     <div>
         
             <div className="signup-content">
-                <div className="signup-img">
-                    <img src={signupbg} alt="signback"/>
+                <div style={{position:"relative"}} className="signup-img">
+                    <img className='reg-bg 'src={signupbg} alt="signback"/>
                 </div>
                 <div className="signup-form">
                     <form method="POST" className="register-form" id="register-form">
-                        <h2>  Register for Admin</h2>
+                        <h2 className='reg-header'>  Register for Admin</h2>
                         <div className="form-row">
                             <div className="form-group">
                                 <label for="name">Full Name :</label>

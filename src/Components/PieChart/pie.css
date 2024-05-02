@@ -1,0 +1,10 @@
+.pie-container{
+    width: 320px;
+    height: 328px;
+    margin-left: 28px;
+    /* white */
+    padding: 14px;
+    background: #1b1111;
+    border-radius: 8px;
+   position:static ;
+}

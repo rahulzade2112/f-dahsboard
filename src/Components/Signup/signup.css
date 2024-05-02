@@ -1,10 +1,12 @@
-@extend display-flex; */
+/* @extend display-flex; */
 display-flex,
 .signup-content,
 .form-row,
-.form-radio {
+.form-radio,
+.select-icon,
+.select-icon i {
   display: flex;
-  display: -webkit-flex;
+  /* display: -webkit-flex; */
 }
 
 /* @extend list-type-ulli; */
@@ -14,7 +16,7 @@ list-type-ulli {
   padding: 0;
 }
 
-/*  */
+
 a:focus,
 a:active {
   text-decoration: none;
@@ -27,6 +29,7 @@ a:active {
 }
 
 input,
+select,
 textarea {
   outline: none;
   appearance: unset !important;
@@ -47,6 +50,7 @@ input::-webkit-inner-spin-button {
 }
 
 input:focus,
+select:focus,
 textarea:focus {
   outline: none;
   box-shadow: none !important;
@@ -72,14 +76,14 @@ input[type="radio"] {
   -ms-appearance: radio !important;
 }
 
-img {
+.reg-bg {
   max-width: 100%;
   height: auto;
+  
+  z-index: 0;
 }
 
-figure {
-  margin: 0;
-}
+
 
 input[type="number"] {
   -moz-appearance: textfield !important;
@@ -95,7 +99,7 @@ input:-webkit-autofill {
   -ms-box-shadow: 0 0 0 30px transparent inset;
 }
 
-h2 {
+.reg-header {
   line-height: 1.66;
   margin: 0;
   padding: 0;
@@ -111,9 +115,23 @@ h2 {
   clear: both;
 }
 
-.signup-img .signup-form {
+
+.container {
+  width: 1200px;
+  
+  margin: 0 auto;
+  background: #fff;
+}
+
+.signup-img,
+.signup-form {
   width: 50%;
 }
+
+.signup-img {
+  margin-bottom: -7px;
+}
+
 .register-form {
   padding: 50px 100px 50px 70px;
 }
@@ -122,16 +140,17 @@ h2 {
   margin: 0 -15px;
 }
 .form-row .form-group {
-  width: 100%;
-  /* padding: 0 15px; */
+  width: 50%;
+  padding: 0 15px;
 }
 
 .form-group {
   margin-bottom: 23px;
-  position: relative;
+  
 }
 
-input {
+input,
+select {
   display: block;
   width: 100%;
   border: 1px solid #ebebeb;
@@ -141,7 +160,8 @@ input {
   font-weight: 500;
   font-size: 13px;
 }
-input:focus {
+input:focus,
+select:focus {
   border: 1px solid #ff6801;
 }
 
@@ -166,14 +186,14 @@ label {
 }
 
 .form-radio-item {
-  position: relative;
+  
   margin-right: 45px;
 }
 .form-radio-item label {
   font-weight: 500;
   font-size: 13px;
   padding-left: 25px;
-  position: relative;
+  
   z-index: 9;
   display: block;
   cursor: pointer;
@@ -181,7 +201,7 @@ label {
 
 .check {
   display: inline-block;
-  position: absolute;
+  
   border: 1px solid #ebebeb;
   border-radius: 50%;
   -moz-border-radius: 50%;
@@ -197,7 +217,7 @@ label {
   -webkit-transition: border 0.25s linear;
 }
 .check:before {
-  position: absolute;
+  
   display: block;
   content: "";
   width: 9px;
@@ -215,7 +235,7 @@ label {
 }
 
 input[type="radio"] {
-  position: absolute;
+  
   visibility: hidden;
 }
 input[type="radio"]:checked ~ .check {
@@ -225,8 +245,52 @@ input[type="radio"]:checked ~ .check::before {
   background: #ff6801;
 }
 
-.form-select {
-  position: relative;
+
+
+select {
+  appearance: none !important;
+  -moz-appearance: none !important;
+  -webkit-appearance: none !important;
+  -o-appearance: none !important;
+  -ms-appearance: none !important;
+  
+  background: 0 0;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.select-icon {
+  z-index: 0;
+  
+  top: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  -o-justify-content: center;
+  -ms-justify-content: center;
+  align-items: center;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -o-align-items: center;
+  -ms-align-items: center;
+}
+.select-icon i {
+  justify-content: center;
+  -moz-justify-content: center;
+  -webkit-justify-content: center;
+  -o-justify-content: center;
+  -ms-justify-content: center;
+  align-items: center;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -o-align-items: center;
+  -ms-align-items: center;
+  width: 40px;
+  height: 20px;
+  font-size: 18px;
+  color: #999;
 }
 
 .form-submit {
@@ -265,6 +329,11 @@ input[type="radio"]:checked ~ .check::before {
 }
 
 @media screen and (max-width: 992px) {
+  .container {
+    width: calc(100% - 40px);
+    max-width: 100%;
+  }
+
   .signup-content {
     flex-direction: column;
     -moz-flex-direction: column;
@@ -324,5 +393,3 @@ input[type="radio"]:checked ~ .check::before {
     margin-bottom: 10px;
   }
 }
-
-/*# sourceMappingURL=style.css.map

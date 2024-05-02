@@ -39,12 +39,13 @@ const YearDataChart = () => {
     const [reverseRight, setReverseRight] = React.useState(false);
   
   return (
-    <div>  <Stack sx={{ width: '100%',marginLeft:"0%"}}>
+    <div>  <Stack sx={{ width: '100%',marginLeft:"0%", position: "relative", zIndex:"14" }}>
     <Stack direction="row">
       <FormControlLabel
+      sx={{ position: "sticky" }}
         checked={reverseX}
         control={
-          <Checkbox onChange={(event) => setReverseX(event.target.checked)} />
+          <Checkbox sx={{ position: "relative" }} onChange={(event) => setReverseX(event.target.checked)} />
         }
         label="reverse x-axis"
         labelPlacement="end"
