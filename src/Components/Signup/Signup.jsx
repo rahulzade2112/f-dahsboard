@@ -10,60 +10,60 @@ const Signup = () => {
                     <img className='reg-bg 'src={signupbg} alt="signback"/>
                 </div>
                 <div className="signup-form">
-                    <form method="POST" className="register-form" id="register-form">
+                    <form className="register-form" id="register-form">
                         <h2 className='reg-header'>  Register for Admin</h2>
                         <div className="form-row">
                             <div className="form-group">
-                                <label for="name">Full Name :</label>
-                                <input  type="text" name="name" id="name" required/>
+                                <label id='label' for="name">Full Name :</label>
+                                <input className='input-filed fullname' type="text" name="name" id="name" required/>
                             </div>
                         </div>
 
                         <div className="form-group">
-                            <label for="address">Address :</label>
-                            <input type="text" name="address" id="address" required/>
+                            <label id='label' for="address">Address :</label>
+                            <input className='input-filed' type="text" name="address" id="address" required/>
                         </div>
                         <div className="form-radio">
-                            <label for="gender" className="radio-label">Gender:</label>
+                            <label id='label' for="gender" className="radio-label">Gender:</label>
                             <div className="form-radio-item">
-                                <input type="radio" name="gender" id="male" checked/>
-                                <label for="male">Male</label>
+                                <input className='input-filed' type="radio" name="gender" id="male" checked/>
+                                <label id='label' for="male">Male</label>
                                 <span className="check"></span>
                             </div>
                             <div className="form-radio-item">
-                                <input type="radio" name="gender" id="female"/>
-                                <label for="female">Female</label>
+                                <input className='input-filed' type="radio" name="gender" id="female"/>
+                                <label id='label' for="female">Female</label>
                                 <span className="check"></span>
                             </div>
                         </div>
                         <div className="form-row">
                             <div className="form-group">
-                                <label for="state">State :</label>
-                                <input />
+                                <label id='label' for="state">State :</label>
+                                <input className='input-filed' />
 
                             </div>
                             <div className="form-group">
-                                <label for="city">City :</label>
-                                <input />
+                                <label id='label' for="city">City :</label>
+                                <input className='input-filed' />
 
                             </div>
                         </div>
                         <div className="form-group">
-                            <label for="birth_date">DOB :</label>
-                            <input type="text" name="birth_date" id="birth_date"/>
+                            <label id='label' for="birth_date">DOB :</label>
+                            <input className='input-filed' type="text" name="birth_date" id="birth_date"/>
                         </div>
                         <div className="form-group">
-                            <label for="pincode">Pincode :</label>
-                            <input type="text" name="pincode" id="pincode"/>
+                            <label id='label' for="pincode">Pincode :</label>
+                            <input className='input-filed' type="text" name="pincode" id="pincode"/>
                         </div>
                         
                         <div className="form-group">
-                            <label for="email">Email ID :</label>
-                            <input type="email" name="email" id="email" />
+                            <label id='label' for="email">Email ID :</label>
+                            <input className='input-filed' type="email" name="email" id="email" />
                         </div>
                         <div className="form-submit">
-                            <input type="submit" value="Reset All" className="submit" name="reset" id="reset" />
-                            <input type="submit" value="Submit Form" className="submit" name="submit" id="submit" />
+                            <input className='input-filed submit-btn' type="submit" value="Reset All"  name="reset" id="reset" />
+                            <input className='input-filed submit-btn' type="submit" value="Submit Form"  name="submit" id="submit" />
                         </div>
                     </form>
                 </div>

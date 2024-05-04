@@ -1,6 +1,8 @@
 import React from "react";
 import './d.css'
 const Dashboard = () => {
+  const arr=[25,5,4 ,2,4,2,4,2,4,2,4,2,4];
+
   return (<>
       {/* <div className="container-sm">100% wide until small breakpoint</div>
       <div className="container-md">100% wide until medium breakpoint</div>
@@ -17,10 +19,11 @@ const Dashboard = () => {
 
 
 <div className="d-container">
+{ arr.map((elem) => (
 
-fddg
-
-    </div></>
+<div style={{width:"150px", height:"220px",marginLeft:"30px",marginTop:"30px", backgroundColor:"red"}} ></div>
+    ))}</div>
+    </>
   );
 };
 

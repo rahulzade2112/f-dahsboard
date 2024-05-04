@@ -175,7 +175,7 @@ const Header = () => {
           >
             MUI
           </Typography>
-          <Search>
+            <Search>
             <SearchIconWrapper>
               <SearchIcon />
             </SearchIconWrapper>

@@ -101,9 +101,7 @@ const Nav = () => {
     <div>
          <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-    
-
-    
+     
       <Drawer
         sx={{
           flexShrink: 0,
@@ -194,7 +192,7 @@ const Nav = () => {
                 onClick={handleDrawerOpen}
                 aria-label="open drawer"
                 edge="start"
-                sx={{ marginLeft: "-15px",marginRight: "0", position: "fixed", marginTop: "55%" }}
+                sx={{ marginLeft: "-20px",marginRight: "0", position: "fixed", marginTop: "55%" }}
                 >
                 <ArrowRightIcon
                   color="#757ce8"

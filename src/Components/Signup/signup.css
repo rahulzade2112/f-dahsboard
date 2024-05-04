@@ -1,5 +1,4 @@
 /* @extend display-flex; */
-display-flex,
 .signup-content,
 .form-row,
 .form-radio,
@@ -17,19 +16,7 @@ list-type-ulli {
 }
 
 
-a:focus,
-a:active {
-  text-decoration: none;
-  outline: none;
-  transition: all 300ms ease 0s;
-  -moz-transition: all 300ms ease 0s;
-  -webkit-transition: all 300ms ease 0s;
-  -o-transition: all 300ms ease 0s;
-  -ms-transition: all 300ms ease 0s;
-}
-
-input,
-select,
+/* .input-filed,
 textarea {
   outline: none;
   appearance: unset !important;
@@ -37,10 +24,10 @@ textarea {
   -webkit-appearance: unset !important;
   -o-appearance: unset !important;
   -ms-appearance: unset !important;
-}
+} */
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
+.input-filed::-webkit-outer-spin-button,
+.input-filed::-webkit-inner-spin-button {
   appearance: none !important;
   -moz-appearance: none !important;
   -webkit-appearance: none !important;
@@ -49,32 +36,7 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-input:focus,
-select:focus,
-textarea:focus {
-  outline: none;
-  box-shadow: none !important;
-  -moz-box-shadow: none !important;
-  -webkit-box-shadow: none !important;
-  -o-box-shadow: none !important;
-  -ms-box-shadow: none !important;
-}
 
-input[type="checkbox"] {
-  appearance: checkbox !important;
-  -moz-appearance: checkbox !important;
-  -webkit-appearance: checkbox !important;
-  -o-appearance: checkbox !important;
-  -ms-appearance: checkbox !important;
-}
-
-input[type="radio"] {
-  appearance: radio !important;
-  -moz-appearance: radio !important;
-  -webkit-appearance: radio !important;
-  -o-appearance: radio !important;
-  -ms-appearance: radio !important;
-}
 
 .reg-bg {
   max-width: 100%;
@@ -84,20 +46,6 @@ input[type="radio"] {
 }
 
 
-
-input[type="number"] {
-  -moz-appearance: textfield !important;
-  appearance: none !important;
-  -webkit-appearance: none !important;
-}
-
-input:-webkit-autofill {
-  box-shadow: 0 0 0 30px transparent inset;
-  -moz-box-shadow: 0 0 0 30px transparent inset;
-  -webkit-box-shadow: 0 0 0 30px transparent inset;
-  -o-box-shadow: 0 0 0 30px transparent inset;
-  -ms-box-shadow: 0 0 0 30px transparent inset;
-}
 
 .reg-header {
   line-height: 1.66;
@@ -149,8 +97,7 @@ input:-webkit-autofill {
   
 }
 
-input,
-select {
+.input-filed {
   display: block;
   width: 100%;
   border: 1px solid #ebebeb;
@@ -160,12 +107,12 @@ select {
   font-weight: 500;
   font-size: 13px;
 }
-input:focus,
+.input-filed:focus,
 select:focus {
   border: 1px solid #ff6801;
 }
 
-label {
+#label {
   font-size: 14px;
   font-weight: bold;
   font-family: "Montserrat";
@@ -176,7 +123,7 @@ label {
 .form-radio {
   margin-bottom: 18px;
 }
-.form-radio input {
+.form-radio .input-filed {
   width: auto;
   display: inline-block;
 }
@@ -217,7 +164,6 @@ label {
   -webkit-transition: border 0.25s linear;
 }
 .check:before {
-  
   display: block;
   content: "";
   width: 9px;
@@ -234,34 +180,22 @@ label {
   -webkit-transition: background 0.25s linear;
 }
 
-input[type="radio"] {
+/* .input-filed[type="radio"] {
   
   visibility: hidden;
 }
-input[type="radio"]:checked ~ .check {
+.input-filed[type="radio"]:checked ~ .check {
   border: 1px solid #ff6801;
 }
-input[type="radio"]:checked ~ .check::before {
+.input-filed[type="radio"]:checked ~ .check::before {
   background: #ff6801;
-}
+} */
 
 
 
-select {
-  appearance: none !important;
-  -moz-appearance: none !important;
-  -webkit-appearance: none !important;
-  -o-appearance: none !important;
-  -ms-appearance: none !important;
-  
-  background: 0 0;
-  z-index: 10;
-  cursor: pointer;
-}
 
 .select-icon {
-  z-index: 0;
-  
+  z-index: 0;  
   top: 0;
   right: 0;
   bottom: 0;
@@ -298,7 +232,7 @@ select {
   padding-top: 27px;
 }
 
-.submit {
+.submit-btn {
   width: 140px;
   height: 40px;
   display: inline-block;
@@ -320,11 +254,11 @@ select {
   color: #fff;
 }
 
-#submit {
+#submit-btn {
   background: #ff6801;
   color: #fff;
 }
-#submit:hover {
+#submit-btn:hover {
   background-color: #cd5300;
 }
 
@@ -384,7 +318,7 @@ select {
     -ms-flex-direction: column;
   }
 
-  .submit {
+  .submit-btn {
     width: 100%;
   }
 
@@ -392,4 +326,8 @@ select {
     margin-right: 0px;
     margin-bottom: 10px;
   }
+}
+
+.fullname{
+  width: 500px;
 }
