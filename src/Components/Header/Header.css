@@ -1,14 +1,17 @@
-header {
+.headercontainer{
   color: black;
-  height: 150px;
-  background: #5873a7;
+  height: 72px; 
+  background: #4a76cc;
   box-shadow: 0px 2px 2px rgba(163, 171, 185, 0.26);
-  padding-top: 25px;
-  padding-left: 32px;
+  /* padding-top: 25px; */
+  /* padding-left: 32px; */
   width: 100%;
   display: flex;
   justify-content: space-between;
   position: fixed;
+  z-index: 1500;
+  
+
 }
 .logo {
   position: relative;
@@ -19,7 +22,7 @@ header {
 
 .inputheader {
   width: 45%;
-  height: 34px;
+  height: 10px;
   border-radius: 54px;
   background: #ececec;
   border: none;

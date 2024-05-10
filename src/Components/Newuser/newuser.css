@@ -1,0 +1,45 @@
+.carousel-container {
+    /* position: relative; */
+    width: 250px;
+    overflow: hidden;
+    height:350px;
+    /* border: 1px solid; */   
+  }
+  
+  .carousel-item {
+    display: none;
+    padding: 10px;
+    text-align: center;   
+     
+
+  }
+  
+  .carousel-item.active {
+    display: block;    
+  }
+  
+  #carousel-content{
+    width: 250px;
+    overflow: hidden;
+    /* background-color: #fff; */
+    background-color: rgba(65, 65, 65 , 0.2);
+
+    height:350px;
+    padding: 15px;
+    
+    border: 1px solid #d4d4d4;
+    /* border: 8px;    color: #f37085 */
+    /* animation: moveLeft 1s linear infinite alternate; */
+  };
+
+
+  /* @keyframes moveLeft {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%); /* Move the card completely to the left */
+    /* } */
+  /* } */ 
+
+  

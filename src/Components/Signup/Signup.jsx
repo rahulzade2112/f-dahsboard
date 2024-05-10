@@ -4,10 +4,9 @@ import './signup.css'
 const Signup = () => {
   return (
     <div>
-        
             <div className="signup-content">
                 <div style={{position:"relative"}} className="signup-img">
-                    <img className='reg-bg 'src={signupbg} alt="signback"/>
+                    <img className='reg-bg'src={signupbg} alt="signback"/>
                 </div>
                 <div className="signup-form">
                     <form className="register-form" id="register-form">

@@ -2,7 +2,7 @@ import React from "react";
 import loginbackground from "../../assets/woman-sitting-chair-with-whiskey-cigar_266732-8201.avif";
 import { Link, Stack, Divider, Typography } from "@mui/material";
 // import GoogleSign from "../../assets/google.png";
-import LogSticker from "../../assets/avatar7.png";
+// import LogSticker from "../../assets/avatar7.png";
 import "./signin.css";
 import {
   Checkbox,
@@ -30,7 +30,7 @@ const Signin = () => {
                 }}
                 className="display_picture"
               >
-                <img className="login_avatar box" src={LogSticker} />
+                {/* <img className="login_avatar box" src={LogSticker} /> */}
               </div>
               <br></br>
               <br></br>

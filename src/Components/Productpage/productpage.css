@@ -1,8 +1,8 @@
-.productcard-container{
-    height: 80vh;
- background-color: aqua;
- /* margin-top: 1; */
- width: 100%;
+/* .productcard-container{ */
+/* height: 100%; */
+/* background-color: aqua; */
+/* margin-top: 1; */
+/* width: 100%;
  display: flex;
  overflow: auto;
  flex-direction: row;
@@ -10,4 +10,19 @@ flex-wrap: wrap;
 align-content: center;
 justify-content: flex-start;
 align-items: center;
+} */
+
+.productcard-container{
+  /* height: 9%;  */
+  overflow: auto;
+  width: 100%;
+  display: flex;
+  border: 1px solid #efefef;
+  background-color: white;
+  border-radius: 8px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
 }

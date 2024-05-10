@@ -1,13 +1,30 @@
-.d-container{
- height: 80vh;
- background-color: aqua;
- margin-top: 0;
- width: 100%;
- display: flex;
- overflow: auto;
- flex-direction: row;
-flex-wrap: wrap;
-align-content: center;
-justify-content: flex-start;
-align-items: center;
-};
+
+  .dcontainer{
+    overflow: auto;
+    width: 100%;
+    display: flex;
+    border-radius: 8px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 35px;
+
+  }
+
+  .wlc-msg-container {
+  display: flex;
+  gap: 18px;
+  }
+  
+ .social-content{
+  border-radius: 8px;
+  padding: 18px;
+  border: 18px solid #fff;    
+   box-shadow: 0px 0px 13px 3px ;
+ }
+
+ .monthly-content{
+  
+ }

@@ -36,16 +36,16 @@ const Productpage = () => {
   };
 
   return (
-    <>  
+    <>     
+     <h2>Product List </h2>
+
     <div className="productcard-container">
+
       { arr.map((elem) => (
-    
-      
       <Card
         raised
         sx={{
-          maxWidth: 255,
-          padding: "0.1em",
+          maxWidth: 250,
           marginLeft:"30px",marginTop:"30px"
         }}
       >

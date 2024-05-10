@@ -1,28 +1,38 @@
 import React from "react";
-import './d.css'
+import "./d.css";
+// import yr from "./../../assets/yr.png";
+import Welcome from "../Welcome/Welcome";
+import Social from "../Social-Account/Social";
+import Productlinechart from "../ProductLineChart/Productlinechart";
+import ComposedChart from "../ComposedChart/ComposedChart";
+import MonthlyDataChart from "../YearDataChart/MonthlyDataChart";
+import NewUser from "../Newuser/NewUser";
 const Dashboard = () => {
-  const arr=[25,5,4 ,2,4,2,4,2,4,2,4,2,4];
+  return (
+    <>
+      <div className="dcontainer">
+        <div className="wlc-msg-container">
 
-  return (<>
-      {/* <div className="container-sm">100% wide until small breakpoint</div>
-      <div className="container-md">100% wide until medium breakpoint</div>
-      <div className="container-lg">100% wide until large breakpoint</div>
-      <div className="container-xl">100% wide until extra large breakpoint</div>
-      <div className="container-xxl">
-        100% wide until extra extra large breakpoint
-      </div> */}
-      {/* <div
-        className="cbt container-xl   text-success text-center p-2 border border-success"
-      >gfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
-        */}
-      {/* </div> */}
+          <div>
+            <Welcome />
+          </div>
 
+          <div className="social-content">
+            <Social />
+          </div>
+        </div>
 
-<div className="d-container">
-{ arr.map((elem) => (
+        <div className="wlc-msg-container">
+          
+          <div className="monthly-content">
+            <MonthlyDataChart />
+          </div>
 
-<div style={{width:"150px", height:"220px",marginLeft:"30px",marginTop:"30px", backgroundColor:"red"}} ></div>
-    ))}</div>
+          <div >
+            <NewUser/>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
