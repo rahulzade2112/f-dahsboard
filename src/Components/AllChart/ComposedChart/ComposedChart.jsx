@@ -55,8 +55,8 @@ const Composedchart = () => {
     <div>
       <div
         style={{
-          width: "742px",
-          height: "358px",
+          width: "652px",
+          height: "330px",
           backgroundColor: "#fff",
           borderRadius: "8px",
         }}
@@ -64,12 +64,12 @@ const Composedchart = () => {
       >
         <ResponsiveContainer width="100%" height="100%">
           <ComposedChart
-            width={500}
+            width={400}
             height={400}
             data={data}
             margin={{
               top: 20,
-              right: 80,
+              right: 10,
               bottom: 20,
               left: 20,
             }}

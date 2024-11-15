@@ -32,11 +32,12 @@ body {
 }
 
 .maincontainer {
-  margin-top: 30px;
-  margin-left: 25vh;
+  margin-top: 60px;
+  margin-left: 26vh;
   align-items: center;
-  justify-content: center;
-  width: 81%;
+  justify-content: space-evenly;
+
+  width: 85%;
   position: static;
   /* height: 50px; */
 }

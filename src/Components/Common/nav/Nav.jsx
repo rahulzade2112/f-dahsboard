@@ -42,7 +42,7 @@ const Nav = () => {
 
           <Link to="/products"><li>Products List</li></Link>
 
-          <Link to="/add"><li>Add Products</li></Link>
+          <Link to="/addproduct"><li>Add Products</li></Link>
 
           <button
            onClick={()=>{localStorage.removeItem("token"); 

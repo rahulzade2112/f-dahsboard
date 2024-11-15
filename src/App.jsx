@@ -3,16 +3,13 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Signin from "./Components/Signin/Signin";
 import Signup from "./Components/Signup/Signup";
-import Header from "./Components/Header/Header";
-import Nav from "./Components/nav/Nav";
-import YearDataChart from "./Components/YearDataChart/MonthlyDataChart";
-import Productlinechart from "./Components/ProductLineChart/Productlinechart";
-import Composedchart from "./Components/ComposedChart/ComposedChart";
-import PieC from "./Components/PieChart/PieChart";
 import Dashboard from "./Components/Dashboard/Dashboard";
 import Productpage from "./Components/Productpage/Productpage";
 import AddProduct from "./Components/AddProduct/AddProduct";
 import ProductShipping from "./Components/ProductShipping/ProductShipping";
+import Header from "./Components/Common/Header/Header";
+import Nav from "./Components/Common/nav/Nav";
+import Account from "./Components/Account/Account";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -28,33 +25,30 @@ function App() {
         {/* {token != null && ( */}
         <div>
           <div className="appcontainer">
-            <div >
+            <div>
               <Header />
-               </div>
-              <div >
-                <Nav />
-              </div>
-           
+            </div>
+            <div>
+              <Nav />
+            </div>
+
             <div className="maincontainer">
               <div className="contentcontainer">
                 <Routes>
                   <Route index element={<Dashboard />}></Route>
-                  {/* <Route */}
-                  {/* path="/account" */}
-                  {/* element={<Account /*state={data} */}
-                  {/* // ></Route> */}
-                <Route
+                  <Route path="/account" element={<Account/>}></Route>
+
+                  <Route
                     path="/products"
                     element={<Productpage /* state={data}*/></Productpage>}
-                >
-                  </Route>
-                  {/* <Route path="//" element={<AddProduct />}></Route> */}
+                  ></Route>
+                  <Route path="/addproduct" element={<AddProduct />}></Route>
                 </Routes>
               </div>
             </div>
           </div>
         </div>
-        {/* )} */} 
+        {/* )} */}
         {/* <Signin /> */}
       </BrowserRouter>
 
